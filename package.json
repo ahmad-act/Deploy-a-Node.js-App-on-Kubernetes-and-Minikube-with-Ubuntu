@@ -1,0 +1,14 @@
+{
+  "name": "deploy-node.js-app-on-aws-ec2-with-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ahmad A. Zaman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

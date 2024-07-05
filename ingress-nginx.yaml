@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-node-app-ingress-nginx
+spec:
+  rules:
+  - host: "myapp.com" # Set the real domain
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: my-node-app-service-loadbalancer
+            port:
+              number: 80
+  
